@@ -1,0 +1,20 @@
+.row-customer-lifecycle {
+  .title-customer-lifecycle {
+    span {
+      font-weight: bold;
+    }
+  }
+  .content-customer-lifecycle {
+    margin-left: 5px;
+    .table-customer-lifecycle {
+      margin-top: 15px;
+      border: 1px solid rgb(219, 219, 219);
+      border-radius: 4px;
+    }
+    .chart-bar-customer-lifecycle {
+      margin-top: 30px;
+      border: 1px solid rgb(219, 219, 219);
+      border-radius: 4px;
+    }
+  }
+}

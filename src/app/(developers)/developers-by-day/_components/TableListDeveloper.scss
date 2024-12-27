@@ -1,0 +1,234 @@
+.detail-categories {
+  text-align: left;
+  .disabled {
+    cursor: no-drop;
+  }
+  &-radio {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    gap: 10px;
+  }
+  .detail-categories-header {
+    padding: 10px 0;
+    background: #0b1d46;
+    font-size: 18px;
+    .ant-breadcrumb-separator,
+    a {
+      color: white;
+      &:hover {
+        color: #ffc225;
+      }
+    }
+  }
+  .detail-categories-body {
+    overflow-x: auto;
+    .container-title-body {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .title-apps {
+      font-size: 18px;
+      color: #535353;
+    }
+    .link {
+      margin-top: 5px;
+    }
+    .sort {
+      display: flex;
+      gap: 25px;
+      align-items: end;
+      margin-top: 10px;
+      @media (max-width: 992px) {
+        margin-top: 20px;
+      }
+      .ant-space {
+        cursor: pointer;
+        &:hover {
+          color: #ffc225;
+        }
+        .anticon-down {
+          font-size: 13px;
+        }
+      }
+    }
+    .line-top {
+      border-top: 1px solid #e6e6e6;
+      margin-top: 15px;
+    }
+    .detail-category {
+      .block-item-detail {
+        .page {
+          background: #0b1d46;
+          padding: 5px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .title-column {
+        background-color: #f0f0f0;
+        padding: 10px 0 10px 20px;
+        .title-styled {
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+      .item-detail {
+        padding: 13px 0 13px 10px;
+        border-top: 1px solid rgb(230, 230, 230);
+        .highlights {
+          display: flex;
+          align-items: center;
+          ul {
+            margin-left: -15px;
+          }
+        }
+        .icon-star {
+          color: #d8aa34;
+          .calular-incre {
+            margin-left: 5px;
+            color: white;
+            background: #27a844;
+            border-radius: 6px;
+            padding: 3px;
+            font-size: 12px;
+          }
+          .calular-decre {
+            margin-left: 5px;
+            color: white;
+            background: #dc3544;
+            border-radius: 6px;
+            padding: 3px;
+            font-size: 12px;
+          }
+        }
+        .rank {
+          margin-top: 10px;
+          span {
+            border-radius: 10px;
+            background: #343a3f;
+            padding: 5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+        .hightlights {
+          font-size: 13px;
+          padding: 3px 5px;
+          border-radius: 4px;
+        }
+        .content-app {
+          // align-items: center;
+          display: flex;
+          .image {
+            img {
+              height: 75px;
+              width: 75px;
+              border-radius: 8px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .item-detail-app {
+            margin-left: 15px;
+            .tagline {
+              margin-top: 5px;
+            }
+            .name-app-shopify {
+              .link-name {
+                font-size: 16px;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+              .built-for-shopify {
+                margin-left: 10px;
+                border-radius: 4px;
+              }
+              .calular-incre {
+                margin-right: 5px;
+                color: white;
+                background: #27a844;
+                border-radius: 6px;
+                padding: 3px;
+                font-size: 12px;
+              }
+              .calular-decre {
+                margin-right: 5px;
+                color: white;
+                background: #dc3544;
+                border-radius: 6px;
+                padding: 3px;
+                font-size: 12px;
+              }
+            }
+            .link-app-shopify {
+              margin-top: 5px;
+              &:hover {
+                color: #40a2f8;
+                text-decoration: underline;
+              }
+              .link {
+                color: black;
+                &:hover {
+                  color: #40a2f8;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.detail-developers-header {
+  padding: 10px 0;
+  background: #0b1d46;
+  font-size: 18px;
+  .ant-breadcrumb-separator,
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #ffc225;
+    }
+  }
+  .ant-breadcrumb-link {
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 450px) {
+  .detail-categories {
+    .detail-categories-body {
+      .detail-category {
+        width: 1200px;
+      }
+      .sort {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+      }
+      .pagination {
+        width: 1200px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

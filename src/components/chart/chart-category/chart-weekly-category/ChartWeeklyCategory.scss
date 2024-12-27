@@ -1,0 +1,26 @@
+.header-chart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  .header-switch {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .block-header {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+.chart-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+.chart {
+  padding: 30px 15px 30px 15px;
+}

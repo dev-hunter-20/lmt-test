@@ -1,0 +1,200 @@
+.detail-delisted_deleted {
+  .detail-categories-body {
+    .container-title-body {
+      margin: 20px 0px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .title-apps {
+      font-size: 18px;
+      color: #535353;
+    }
+    .link {
+      margin-top: 5px;
+    }
+    .sort {
+      display: flex;
+      gap: 15px;
+      align-items: end;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      .ant-space {
+        cursor: pointer;
+        &:hover {
+          color: #ffc225;
+        }
+        .anticon-down {
+          font-size: 13px;
+        }
+      }
+      .ant-select-single {
+        height: 39px;
+        &:focus-within {
+          .ant-select-selector {
+            border-color: #ffc225;
+          }
+        }
+        &:hover {
+          .ant-select-selector {
+            border-color: #ffc225;
+          }
+        }
+        .ant-select-selector {
+          padding: 10px 25px;
+          border-radius: 20px;
+          border: 1px solid #ccc;
+          color: #000000;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+      .select-label {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+    }
+    .item-detail {
+      padding: 13px 0 13px 10px;
+      border-top: 1px solid rgb(230, 230, 230);
+      .highlights {
+        display: flex;
+        align-items: center;
+        ul {
+          margin-left: -15px;
+        }
+      }
+      .icon-star {
+        color: #d8aa34;
+        .calular-incre {
+          margin-left: 5px;
+          color: white;
+          background: #27a844;
+          border-radius: 6px;
+          padding: 3px;
+          font-size: 12px;
+        }
+        .calular-decre {
+          margin-left: 5px;
+          color: white;
+          background: #dc3544;
+          border-radius: 6px;
+          padding: 3px;
+          font-size: 12px;
+        }
+      }
+      .rank {
+        margin-top: 10px;
+        span {
+          border-radius: 10px;
+          background: #343a3f;
+          padding: 5px;
+          padding-left: 12px;
+          padding-right: 12px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+      .hightlights {
+        font-size: 13px;
+        padding: 3px 5px;
+        border-radius: 4px;
+      }
+      .content-app {
+        display: flex;
+        .image {
+          img {
+            height: 75px;
+            width: 75px;
+            border-radius: 8px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .item-detail-app {
+          margin-left: 15px;
+          .tagline {
+            margin-top: 5px;
+          }
+          .name-app-shopify {
+            .link-name {
+              font-size: 16px;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            .built-for-shopify {
+              margin-left: 10px;
+              border-radius: 4px;
+            }
+            .calular-incre {
+              margin-right: 5px;
+              color: white;
+              background: #27a844;
+              border-radius: 6px;
+              padding: 3px;
+              font-size: 12px;
+            }
+            .calular-decre {
+              margin-right: 5px;
+              color: white;
+              background: #dc3544;
+              border-radius: 6px;
+              padding: 3px;
+              font-size: 12px;
+            }
+          }
+          .link-app-shopify {
+            margin-top: 5px;
+            &:hover {
+              color: #40a2f8;
+              text-decoration: underline;
+            }
+            .link {
+              color: black;
+              &:hover {
+                color: #40a2f8;
+              }
+            }
+          }
+        }
+      }
+    }
+    .ant-table-thead > tr > th {
+      background-color: #d4d3d39f !important;
+      .ant-table-column-title {
+        font-weight: 500 !important;
+        color: #000000 !important;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .detail-categories-body {
+    .pagination {
+      .ant-pagination-total-text {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+.app-ranking {
+  margin-top: 20px;
+
+  .table-app {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  th {
+    color: #000000 !important;
+    background: #ffffff !important;
+  }
+
+  .ant-table-cell {
+    line-height: 25px;
+  }
+
+  .ant-table-cell-fix-left {
+    font-weight: 700 !important;
+  }
+
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    padding: 5px 0;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    .positions {
+      display: flex;
+      margin-right: 20px;
+      width: 100px;
+      .total-rank {
+        margin-right: 5px;
+      }
+      .rank {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 12px;
+        padding: 0 5px;
+        .down {
+          margin-left: 2px;
+        }
+      }
+      .rank-down {
+        background-color: #dc3544;
+      }
+      .rank-up {
+        background-color: #27a844;
+      }
+    }
+  }
+  .ai-keyword {
+    padding: 20px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      li {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        span {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 100%;
+        }
+        .index-rank {
+          background-color: #27a844;
+          border-radius: 15px;
+          padding: 3px 8px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .upgrade-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    a {
+      background-color: #05396c;
+      border-color: #05396c;
+      color: #ffffff;
+      padding: 3px 20px;
+      border-radius: 7px;
+      margin-bottom: 10px;
+      &:hover {
+        background-color: #0e4883;
+      }
+    }
+    .text {
+      font-size: 12px;
+      color: #868686;
+    }
+  }
+  .ranking {
+    span {
+      font-weight: 700;
+    }
+    a {
+      text-decoration: underline;
+    }
+    .see-more {
+      cursor: pointer;
+      span {
+        font-weight: 500;
+        .rotate-icon {
+          transform: rotate(90deg);
+          font-size: 13px;
+        }
+        .rotate-icon-hide {
+          transform: rotate(270deg);
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .not-data {
+    font-weight: 700;
+  }
+  .categories-ranking {
+    .see-more {
+      cursor: pointer;
+      font-weight: 500;
+      span {
+        font-weight: 500;
+        .rotate-icon {
+          transform: rotate(90deg);
+          font-size: 13px;
+        }
+        .rotate-icon-hide {
+          transform: rotate(270deg);
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .collections-ranking-most {
+    margin-top: 27px;
+  }
+  .text-nowarp {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .app {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100px;
+    .image {
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-right: 7px;
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 4px;
+      }
+    }
+    .title-app {
+      width: 75%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      .app-name {
+        font-size: 16px;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        font-weight: 500;
+      }
+      .rating {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: #d8aa34;
+        margin-bottom: 7px;
+        .star {
+          display: inline-flex;
+          align-items: center;
+          svg {
+            margin-right: 5px;
+            margin-top: -3px;
+          }
+        }
+        .review-count {
+          color: #69b1ff;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      .view-detail {
+        padding: 7px 20px;
+        background: #ffc225;
+        border-color: #ffc225;
+        color: #0b1d46;
+        border-radius: 3px;
+        font-weight: 500;
+        &:hover {
+          background: #ffc125c7;
+          border-color: #ffc125c7;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.input-keyword {
+  .ant-select-arrow {
+    display: none
+  }
+}
+.suggest-keyword {
+  &-note {
+    font-style: italic;
+    color: #888686;
+    font-size: 14px;
+  }
+  &-tag {
+    margin: 5px;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+}

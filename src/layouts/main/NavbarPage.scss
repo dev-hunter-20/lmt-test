@@ -1,0 +1,180 @@
+@import '../../utils/theme/colors';
+
+#components-layout-demo-fixed-sider .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.link-usage {
+  margin: 15px 0;
+  text-decoration: underline;
+  color: #1890ff;
+}
+
+.menu-item-detail {
+  padding-left: 50px !important;
+  .ant-menu-item-selected {
+    color: black;
+  }
+  .menu-link {
+    font-weight: 500 !important;
+    color: black;
+    font-size: 16px;
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ffc225 !important;
+    }
+  }
+}
+
+.sub-menu-item {
+  padding: 5px;
+  font-size: 15px;
+  a {
+    color: black;
+    &:hover {
+      color: #ffc225 !important;
+    }
+  }
+}
+
+.ant-pagination {
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    button {
+      border: none;
+      outline: none;
+    }
+  }
+  .ant-pagination-options-size-changer {
+    .ant-select-selector {
+      border-radius: 6px !important;
+    }
+  }
+  .ant-pagination-item-active {
+    background-color: #ffc225;
+  }
+  .ant-pagination-item {
+    border-radius: 50%;
+    padding: 4px;
+    border: none;
+    min-width: 36px;
+    height: 36px;
+    a {
+      font-size: 14px;
+      color: rgb(48, 46, 46);
+    }
+  }
+}
+
+.ant-popover-inner-content {
+  .list-my-app {
+    .item-my-app {
+      .link-detail-my-app {
+        padding: 5px 0px 5px 0px;
+        .list-change {
+          ul {
+            margin: 0;
+            padding-left: 10px;
+          }
+        }
+        .ant-badge {
+          margin-left: 0;
+          a {
+            margin-right: 2px !important;
+          }
+        }
+        .review-change {
+          margin-left: 10px;
+          font-weight: bold;
+        }
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+.sasi-layout {
+  .ant-layout-content {
+    min-height: 78vh;
+  }
+  .ant-layout-content {
+    background: white;
+    .content-menu {
+      background-color: #ffffff;
+    }
+  }
+  .create-account {
+    display: flex;
+    background-color: #818a90;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 13px 50px;
+    .link-sign {
+      a {
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .link-create-account {
+      padding-left: 20px;
+      a {
+        color: white;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.App-logo {
+  max-height: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.ant-menu-vertical .ant-menu-item:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+.ant-dropdown {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.scrollable-menu {
+  max-height: 700px;
+  overflow-y: auto;
+}
+.scrollable-menu::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollable-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollable-menu::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.scrollable-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: pointer;
+}
+.ant-menu-submenu-popup {
+  .menu-item-search {
+    text-align: center;
+    .search-icon {
+      display: none;
+    }
+    .search-text {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .close-icon {
+      display: none;
+    }
+  }
+}

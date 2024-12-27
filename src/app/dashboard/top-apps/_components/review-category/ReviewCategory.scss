@@ -1,0 +1,15 @@
+.category-pie {
+  width: 100%;
+  .recharts-legend-wrapper {
+    right: 0px !important;
+    top: 80px !important;
+    .recharts-default-legend {
+      .recharts-legend-item {
+        padding: 5px 0px;
+      }
+    }
+    .recharts-surface {
+      border-radius: 8px;
+    }
+  }
+}

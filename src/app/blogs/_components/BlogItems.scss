@@ -1,0 +1,60 @@
+.item-title {
+  &-author {
+    font-size: 14px;
+    color: #929292;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-content {
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(0, 0, 0, 0.85);
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+  &-delete {
+    color: #f81d22;
+    font-size: 18px;
+  }
+  &-edit {
+    color: rgb(46, 120, 218);
+    font-size: 18px;
+    margin-left: 10px;
+  }
+}
+.item-desc {
+  margin-top: 20px;
+  color: #616060;
+  &-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 66px;
+  }
+  &-tag {
+    .ant-tag {
+      margin-top: 20px;
+      background-color: rgba(3, 69, 191, 0.1);
+      border: none;
+      padding: 5px 10px;
+      border-radius: 20px;
+    }
+  }
+  &-date {
+    margin-top: 10px;
+  }
+}
+
+.card-blog {
+  img {
+    height: 250px;
+    width: 380px !important;
+  }
+}

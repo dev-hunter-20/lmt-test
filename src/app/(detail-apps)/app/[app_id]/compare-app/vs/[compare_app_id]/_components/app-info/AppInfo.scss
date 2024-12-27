@@ -1,0 +1,64 @@
+.app-info {
+  margin-top: 20px;
+  min-width: 1620px;
+  h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .table-app {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  th {
+    color: rgba(0, 0, 0, 0.795) !important;
+  }
+
+  .ant-table-cell {
+    line-height: 25px;
+  }
+
+  .ant-table-cell-fix-left {
+    font-weight: 700;
+  }
+
+  .no-shopify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shopify-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: #e0f0ff;
+    border-radius: 5px;
+    min-height: 56px;
+    span {
+      padding: 20px 20px 20px 5px;
+    }
+  }
+
+  .lauch-date {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    .check {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      .anticon {
+        color: #02aaa4;
+        margin-right: 5px;
+      }
+      li {
+        padding: 5px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,295 @@
+@import '../../../styles/global';
+
+.onboarding-new {
+  top: 10vh;
+  .step-skip {
+    font-size: 15px;
+    text-decoration: underline;
+    width: 20%;
+    cursor: pointer;
+  }
+  .ant-modal-content {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #ffefe4 0%, #fff9ec 36.18%, #ffffff 65%, #ffffff 100%);
+    .ant-modal-body {
+      height: 700px;
+      .item-onboarding {
+        margin: 80px auto;
+        background: #e2e2e2;
+        border-radius: 30px;
+        padding: 28px 0px;
+        width: 92%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .top-onboarding {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0px 40px 0px;
+        width: 100%;
+      }
+      .dots {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 84%;
+    .title {
+      margin-top: 10px;
+      font-size: 40px;
+      font-weight: bold;
+      background: -webkit-linear-gradient(45deg, #ff4e50, #f9c723);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+    .desc {
+      font-size: 18px;
+      color: #5b5e63;
+      color: #000000;
+    }
+  }
+  &-desc {
+    font-size: 18px;
+    color: #5b5e63;
+    color: #000000;
+  }
+  &-skip {
+    margin: 5px 0 0 15px;
+    font-size: 15px;
+    color: #5b5e63;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: #5b5e63;
+    }
+  }
+
+  &-help {
+    font-size: 16px;
+  }
+  &-action {
+    width: 20%;
+    min-height: 320px;
+    box-shadow: 0 0 2px 0 rgba(87, 94, 100, 0.2), 0 12px 24px -4px rgba(87, 94, 100, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    &:hover {
+      background: -webkit-linear-gradient(45deg, #f8a7a9, #f7df93);
+      color: #ffffff;
+      box-shadow: 0 10px 10px 0 rgba(79, 79, 79, 0.2), 0 30px 26px 0 rgba(0, 0, 0, 0.1);
+      .onboarding-new-action-title {
+        transition: all 0.5s ease;
+        transform: translateY(-5px);
+      }
+      .onboarding-new-action-image {
+        filter: brightness(0) invert(1);
+        .img {
+          transition: all 0.5s ease;
+          transform: translateY(-10px);
+          mix-blend-mode: multiply;
+        }
+      }
+    }
+    &-title {
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+      font-weight: 600;
+    }
+    &-image {
+      img {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.step {
+  width: 100%;
+  padding: 50px 30px;
+  height: 100%;
+  .img-step {
+    height: 100%;
+    .img-gif {
+      border: 1px solid #dfdede;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 28px;
+      font-weight: 500;
+      span {
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+    .item-desc {
+      .footer-onboard {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .skip-onboard {
+          border-color: #f9c723;
+          margin-right: 20px;
+          &:hover {
+            color: #000000;
+          }
+        }
+        .button-onboard {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8b8989;
+    font-style: italic;
+  }
+  &-feature {
+    margin-top: 20px;
+    font-size: 17px;
+    .icon-search-onboard {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      img {
+        display: block;
+      }
+    }
+    span {
+      background-color: #c2ef00;
+      padding: 2px 7px;
+      border-radius: 50%;
+    }
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (max-width: 1366px) {
+  .ant-modal-content {
+    border-radius: 20px !important;
+    overflow-y: auto;
+    .ant-modal-body {
+      height: 900px !important;
+      white-space: nowrap;
+      .item-onboarding {
+        margin: 40px auto !important;
+        padding: 20px 0px !important;
+        flex-wrap: wrap !important;
+      }
+      .top-onboarding {
+        flex-direction: column !important;
+        align-items: center;
+        margin: 10px 0px 20px 0px !important;
+      }
+      .onboarding-new-title .title {
+        font-size: 24px;
+      }
+      .onboarding-new-action {
+        width: 40%;
+        min-height: 200px;
+        margin: 20px;
+      }
+      .dots {
+        margin-top: 80px;
+      }
+    }
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: center;
+    .img-step {
+      max-width: 100% !important;
+    }
+    .step-desc {
+      max-width: 500px !important;
+      margin-top: 20px;
+      .title {
+        span {
+          white-space: break-spaces;
+        }
+      }
+      .item-desc {
+        min-height: 240px;
+        .footer-onboard {
+          bottom: -120px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .ant-modal-content {
+    overflow-x: auto;
+    border-radius: 7px !important;
+    .ant-modal-body {
+      width: 1200px;
+      white-space: nowrap;
+    }
+    .ant-modal-close {
+      left: 10px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-modal-content {
+    border-radius: 15px !important;
+    .ant-modal-body {
+      .item-onboarding {
+        flex-direction: column;
+        padding: 10px 0 !important;
+      }
+      .onboarding-new-action {
+        width: 80%;
+      }
+      .onboarding-new-title .title {
+        font-size: 20px !important;
+      }
+      .onboarding-new-action-title {
+        font-size: 16px;
+      }
+    }
+  }
+}

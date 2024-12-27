@@ -1,0 +1,87 @@
+.row-churn-reinstall {
+  margin-top: 20px;
+  .title-churn-reinstall {
+    margin-bottom: 10px;
+    span {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  .content-churn-reinstall {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+    .table-churn-reinstall-value {
+      display: flex;
+      border-bottom: none;
+      border-radius: 4px;
+      width: 100%;
+      max-height: 430px;
+      overflow: scroll;
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      .total {
+        font-weight: bold;
+        font-size: 15px;
+        margin: 10px 20px;
+      }
+      .styled-table {
+        border-collapse: collapse;
+        font-family: sans-serif;
+        width: 100%;
+        height: 100%;
+        @media (max-width: 768px) {
+          overflow: scroll;
+          white-space: nowrap;
+          display: block;
+        }
+        thead tr {
+          background-color: #fafafa;
+          th {
+            border: 1px solid #dddddd;
+          }
+        }
+        .thead-parent {
+          font-size: 18px;
+        }
+        .sum-row {
+          border-bottom: none;
+          border-top: none;
+          br {
+            margin-bottom: 10px;
+          }
+          & td:first-child {
+            p {
+              font-weight: bold;
+            }
+          }
+        }
+        .bottom-border {
+          border-bottom: 1px solid #dddddd;
+        }
+      }
+      .styled-table th,
+      .styled-table td {
+        padding: 15px 15px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.85);
+      }
+      .styled-table tbody tr {
+        border: 1px solid #dddddd;
+      }
+      .text-value {
+        color: #1890ff !important;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .non-underline {
+        color: rgba(0, 0, 0, 0.85) !important;
+        text-decoration: none;
+        cursor: auto;
+      }
+    }
+  }
+}

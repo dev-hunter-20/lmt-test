@@ -1,0 +1,15 @@
+.pie-chart_de-ac {
+  width: 100%;
+  .recharts-legend-wrapper {
+    right: 0px !important;
+    top: 100px !important;
+    .recharts-default-legend {
+      .recharts-legend-item {
+        padding: 5px 0px;
+      }
+    }
+    .recharts-surface {
+      border-radius: 8px;
+    }
+  }
+}

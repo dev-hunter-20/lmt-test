@@ -1,0 +1,10 @@
+.watching-apps {
+  margin-top: 30px;
+  @media (max-width: 992px) {
+    margin: 0;
+  }
+  .header-watching-apps {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,50 @@
+.blog-content {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.container-blog {
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.breadcrumb-header {
+  padding: 10px 0;
+  background: #0b1d46;
+  font-size: 18px;
+  .ant-breadcrumb-link {
+    color: white;
+  }
+}
+
+.widget-area {
+  margin-top: 20px;
+  .carousel-container {
+    margin-top: 30px;
+    .ant-carousel {
+      .slick-prev,
+      .slick-next {
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #fff;
+      }
+      .slick-prev:hover,
+      .slick-next:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .slick-next::after,
+      .slick-prev::after {
+        display: none;
+      }
+      .slick-prev {
+        margin-left: 15px;
+      }
+    }
+  }
+}

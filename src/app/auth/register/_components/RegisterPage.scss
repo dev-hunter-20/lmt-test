@@ -1,0 +1,73 @@
+@import '../../../../styles/global';
+
+.Register {
+  text-align: center;
+
+  &-logo {
+    max-width: 205px;
+    margin: 0 auto 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-logo:hover {
+    cursor: pointer;
+  }
+
+  &-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    big {
+      font-size: 20px;
+    }
+
+    span {
+      color: $dodger-blue;
+    }
+  }
+
+  &-submit {
+    margin: 22px 0 32px;
+  }
+
+  &-third-party {
+    position: relative;
+    margin: 32px 0;
+
+    &::before {
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: $alto;
+      content: '';
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+      font-size: 14px;
+      color: $alto;
+      background: $white;
+      padding: 8px;
+    }
+  }
+
+  &-term {
+    color: rgba($black, 0.6);
+
+    a {
+      text-decoration: underline;
+      color: rgba($black, 0.6);
+    }
+  }
+
+  &-socials {
+    margin-bottom: 24px;
+  }
+}

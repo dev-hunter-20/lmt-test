@@ -1,0 +1,14 @@
+.dashboard-table {
+  margin-top: 20px;
+}
+
+@media (max-width: 1400px) {
+  .ant-table {
+    .content-column {
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

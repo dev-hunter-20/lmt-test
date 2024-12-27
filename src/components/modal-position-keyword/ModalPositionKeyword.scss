@@ -1,0 +1,21 @@
+.popup-detail-position {
+  .date-range {
+    text-align: left;
+    .title-name {
+      font-weight: bold;
+    }
+    .icon-search-date {
+      cursor: pointer;
+      margin-left: 20px;
+    }
+  }
+  .chart-weekly-keyword,
+  .chart-weekly-ga {
+    margin-top: 30px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+  }
+}

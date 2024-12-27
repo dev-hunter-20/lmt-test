@@ -1,0 +1,33 @@
+.content-compare {
+  .plus-app {
+    width: 100%;
+    border: 1px dashed #ffc225;
+    padding: 25px 0;
+    .anticon-plus-circle {
+      color: #ffc225;
+      font-size: 20px;
+    }
+  }
+  .ant-list-item-meta {
+    display: flex;
+    align-items: center !important;
+    height: 52px;
+    max-height: 52px;
+    img {
+      border-radius: 6px;
+    }
+  }
+  .delete-app {
+    .anticon-delete {
+      font-size: 20px;
+    }
+  }
+  .ant-list-item {
+    border-bottom: none !important;
+  }
+}
+
+.btn-footer {
+  display: flex;
+  flex-direction: column;
+}

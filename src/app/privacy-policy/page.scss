@@ -1,0 +1,33 @@
+.privacy-policy {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+
+  .page-header {
+    font-size: 24px;
+
+    a {
+      color: #000000;
+    }
+  }
+
+  p {
+    text-align: justify;
+    padding-left: 20px;
+  }
+
+  h3 {
+    padding-left: 20px;
+  }
+  .articleBody {
+    a {
+      text-decoration: underline;
+    }
+    p {
+      text-align: justify;
+      font-size: 14px;
+      line-height: 2.5rem;
+    }
+  }
+}

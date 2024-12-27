@@ -1,0 +1,91 @@
+image: docker
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: always
+    - if: $CI_COMMIT_BRANCH == "staging"
+      when: always
+
+stages:
+  - build
+  - staging
+  - deploy
+
+variables:
+  TAG_COMMIT: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+
+build-letsmetrix-nextjs-frontend:
+  stage: build
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: ['']
+  script:
+    - echo $CI_REGISTRY_USER
+    - echo $CI_REGISTRY_PASSWORD
+    - mkdir -p /kaniko/.docker
+    - >-
+      /kaniko/executor
+      --context .
+      --dockerfile /Dockerfile
+      --destination ${TAG_COMMIT}
+    - echo "Compile complete."
+
+staging-letsmetrix-nextjs-frontend:
+  stage: staging
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging"
+  services:
+    - docker:dind
+  tags:
+    - staging
+  script:
+    - echo "Deploy to staging environment"
+    - echo "get variables $RSA_KEY $SERVER_IP"
+    - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client wget gnupg -y )'
+    - eval $(ssh-agent -s)
+    - echo "$RSA_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - touch ~/.ssh/config
+    - touch ~/.ssh/known_hosts
+    - chmod -R 400 ~/.ssh
+    - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
+    - '[[ -f /.dockerinit ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin;
+    - docker pull $TAG_COMMIT;
+    - docker save -o ./letsmetrix-nextjs-frontend-staging.tar $TAG_COMMIT;
+    - scp -r ./letsmetrix-nextjs-frontend-staging.tar $SERVER_USER@$SERVER_IP:./
+    - ssh $SERVER_USER@$SERVER_IP "docker load -i ./letsmetrix-nextjs-frontend-staging.tar"
+    - ssh $SERVER_USER@$SERVER_IP "rm -rf ./letsmetrix-nextjs-frontend-staging.tar"
+    - ssh $SERVER_USER@$SERVER_IP "docker container rm -v -f letsmetrix-nextjs-frontend-staging || true"
+    - ssh $SERVER_USER@$SERVER_IP "docker system prune -f"
+    - ssh $SERVER_USER@$SERVER_IP "docker run -d -p 3007:3000 --name letsmetrix-nextjs-frontend-staging --restart always $TAG_COMMIT"
+
+deploy-letsmetrix-nextjs-frontend:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  services:
+    - docker:dind
+  tags:
+    - deployment
+  script:
+    - echo "get variables $RSA_KEY $SERVER_IP"
+    - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client wget gnupg -y )'
+    - eval $(ssh-agent -s)
+    - echo "$RSA_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - touch ~/.ssh/config
+    - touch ~/.ssh/known_hosts
+    - chmod -R 400 ~/.ssh
+    - ssh-keyscan $SERVER_IP >> ~/.ssh/known_hosts
+    - '[[ -f /.dockerinit ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin;
+    - docker pull $TAG_COMMIT;
+    - docker save -o ./letsmetrix-nextjs-frontend.tar $TAG_COMMIT;
+    - scp -r ./letsmetrix-nextjs-frontend.tar $SERVER_USER@$SERVER_IP:./
+    - ssh $SERVER_USER@$SERVER_IP "docker load -i ./letsmetrix-nextjs-frontend.tar"
+    - ssh $SERVER_USER@$SERVER_IP "rm -rf ./letsmetrix-nextjs-frontend.tar"
+    - ssh $SERVER_USER@$SERVER_IP "docker container rm -v -f letsmetrix-nextjs-frontend || true"
+    - ssh $SERVER_USER@$SERVER_IP "docker system prune -f"
+    - ssh $SERVER_USER@$SERVER_IP "docker run -d -p 3008:3000 --name letsmetrix-nextjs-frontend --restart always $TAG_COMMIT"

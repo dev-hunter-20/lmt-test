@@ -1,0 +1,88 @@
+.search-shopify {
+  .list-search-detail {
+    margin-top: 30px;
+    .info-search-detail {
+      .title-name {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+    .body-search-detail {
+      margin-top: 25px;
+      .title {
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 500;
+      }
+      .ant-tabs-tab {
+        &.ant-tabs-tab-active {
+          .ant-tabs-tab-btn {
+            color: #ffc225 !important;
+          }
+        }
+        .ant-tabs-tab-btn {
+          color: #0b1d46;
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        background: #ffc225 !important;
+      }
+    }
+    .pagination {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .content-item {
+      margin-top: 20px;
+
+      .gutter-column {
+        .ant-col {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .developer-item {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px;
+            background: #edeef0;
+            border-radius: 4px;
+            .see-details {
+              margin-top: auto;
+              padding: 7px 15px;
+              background-color: #0b1d46;
+              color: #ffffff;
+              border-radius: 6px;
+            }
+            .text {
+              color: #000000;
+              text-decoration: underline;
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.detail-search-header {
+  padding: 10px 0;
+  background: #0b1d46;
+  font-size: 18px;
+  .ant-breadcrumb-separator,
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #ffc225;
+    }
+  }
+  .ant-breadcrumb-link {
+    color: #ffffff;
+  }
+}

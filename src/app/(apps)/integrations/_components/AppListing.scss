@@ -1,0 +1,81 @@
+.content {
+  min-height: 862px;
+}
+
+.integrations {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 30px;
+  @media (max-width: 992px) {
+    grid-template-columns: auto auto auto;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 562px) {
+    grid-template-columns: auto;
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &-card {
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 0 0 2px 0 rgba(87, 94, 100, 0.2), 0 12px 24px -4px rgba(87, 94, 100, 0.2);
+  }
+  &-content {
+    gap: 5px;
+    font-size: 15px;
+  }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.integration {
+  text-align: left;
+
+  .integration-body {
+    .container-title-body {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .title-apps {
+      font-size: 18px;
+      color: #535353;
+    }
+    .sort {
+      display: flex;
+      gap: 25px;
+      align-items: end;
+      margin-top: 10px;
+      @media (max-width: 992px) {
+        margin-top: 20px;
+      }
+      .ant-space {
+        cursor: pointer;
+        &:hover {
+          color: #ffc225;
+        }
+        .anticon-down {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

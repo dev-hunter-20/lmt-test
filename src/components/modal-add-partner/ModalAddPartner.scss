@@ -1,0 +1,26 @@
+.popup-add-partner-app-id {
+  .button-add-partner {
+    margin-top: 10px;
+    text-align: end;
+  }
+}
+.ant-select-dropdown {
+  .options-btn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    .ant-btn {
+      span {
+        color: #ffc225;
+      }
+    }
+    &:hover {
+      .ant-btn {
+        span {
+          color: #f8da8e;
+        }
+      }
+    }
+  }
+}

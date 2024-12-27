@@ -1,0 +1,76 @@
+.driver-popover {
+  &.driverjs-theme {
+    background-color: #ffffff;
+    min-width: 400px;
+    max-width: 400px;
+    padding: 15px;
+
+    .driver-popover-description {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #000000;
+    }
+
+    .driver-popover-progress-text {
+      font-size: 14px;
+      color: #5a5a5a;
+      text-decoration: underline;
+    }
+
+    button {
+      text-align: center;
+      background-color: #f5b100;
+      color: #ffffff;
+      border: 1px solid #f5b100;
+      text-shadow: none;
+      font-size: 14px;
+      padding: 7px 15px;
+      border-radius: 8px;
+      &:hover {
+        background-color: #ffcc68;
+        border-color: #ffcc68;
+        color: #ffffff;
+      }
+    }
+
+    .driver-popover-navigation-btns {
+      justify-content: flex-end;
+      gap: 10px;
+      button.skip-tour-btn {
+        background: none;
+        border: none;
+        color: #5a5a5a;
+        font-size: 14px;
+        text-decoration: underline;
+        cursor: pointer;
+        padding: 0;
+        &:hover {
+          color: #9b9b9b;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .driver-popover-close-btn {
+      color: #9b9b9b;
+      &:hover {
+        color: #333333;
+      }
+    }
+
+    .driver-popover-arrow {
+      &-side-left {
+        border-left-color: #f0f4f8;
+      }
+      &-side-right {
+        border-right-color: #f0f4f8;
+      }
+      &-side-top {
+        border-top-color: #f0f4f8;
+      }
+      &-side-bottom {
+        border-bottom-color: #f0f4f8;
+      }
+    }
+  }
+}

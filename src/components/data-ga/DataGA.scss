@@ -1,0 +1,33 @@
+.data-from-ga-detail {
+  border: 1px solid rgb(201, 201, 201);
+  padding: 15px;
+
+  .title-table {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .title-data {
+    cursor: pointer;
+    color: #1890ff;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+}
+
+.ant-table-column-title {
+  span {
+    font-weight: 500;
+  }
+}
+
+.ant-table-cell {
+  span {
+    font-weight: 500;
+  }
+}

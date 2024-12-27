@@ -1,0 +1,74 @@
+.container-compare_app {
+  .compare-app-header {
+    padding: 10px 0;
+    background: #0b1d46;
+    font-size: 18px;
+    .ant-breadcrumb-separator,
+    a {
+      color: #ffffff;
+      &:hover {
+        color: #ffc225;
+      }
+    }
+    .ant-breadcrumb-link {
+      color: #ffffff;
+    }
+  }
+  .content-compare {
+    @media (max-width: 1900px) {
+      overflow-x: auto;
+      max-width: 1620px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    .save-compare {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 20px 0px;
+      font-size: 16px;
+      font-weight: 700;
+      span {
+        cursor: pointer;
+        .icon-heart {
+          margin-right: 3px;
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+
+  .ant-table-thead > tr > th {
+    border-right: 1px solid #ddd;
+  }
+
+  .ant-table-tbody > tr > td {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+
+  .ant-table-tbody > tr > td:last-child {
+    border-right: none;
+  }
+}
+
+.loading-compare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.custom-cancel-button {
+  border-color: #ffc225 !important;
+  color: #ffc225 !important;
+}
+
+.custom-ok-button {
+  outline-color: #ffffff !important;
+}

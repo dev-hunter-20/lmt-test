@@ -1,0 +1,22 @@
+.popup-change-log {
+  .ant-modal-body {
+    max-height: 500px;
+    overflow: auto;
+  }
+}
+.content-popup-change-log {
+  max-height: 500px !important;
+  overflow: auto !important;
+}
+
+.ant-modal-footer {
+  display: block !important;
+}
+
+.change-log-text {
+  .change-log-desc {
+    display: block;
+    color: #888;
+    margin-top: 10px;
+  }
+}

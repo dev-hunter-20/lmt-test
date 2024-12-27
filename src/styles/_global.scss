@@ -1,0 +1,120 @@
+@import '/node_modules/antd/dist/reset.css';
+@import '/node_modules/slick-carousel/slick/slick.css';
+@import '/node_modules/slick-carousel/slick/slick-theme.css';
+@import './fonts';
+@import './colors';
+@import './constants';
+@import './mixins';
+
+* {
+  font-weight: 400;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: $athens-gray;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.col-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+// .container {
+//   max-width: 1440px;
+//   width: 100%;
+//   padding: 0 16px;
+//   margin: 0 auto;
+// }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.ant-notification-notice {
+  padding-right: 48px;
+}
+
+.primary-color {
+  color: #cc9d24 !important;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}

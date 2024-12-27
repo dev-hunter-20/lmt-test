@@ -1,0 +1,27 @@
+@import '../../../styles/global';
+
+.DatePicker {
+  .ant-picker:hover,
+  .ant-picker-focused {
+    border-color: $limeade;
+  }
+
+  .ant-picker-range .ant-picker-active-bar {
+    background-color: $limeade;
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+    border-color: $limeade;
+  }
+
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+  .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+    background: $limeade;
+  }
+
+  .ant-picker-header > button:hover,
+  .ant-picker-header-view button:hover {
+    color: $limeade;
+  }
+}

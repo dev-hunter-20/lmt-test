@@ -1,0 +1,188 @@
+.detail-keys {
+  text-align: left;
+  .detail-key-header {
+    padding: 10px 0;
+    background: #0b1d46;
+    font-size: 18px;
+    .ant-breadcrumb-separator,
+    a {
+      color: #ffffff;
+      &:hover {
+        color: #ffc225;
+      }
+    }
+    .ant-breadcrumb-link {
+      color: #ffffff;
+    }
+  }
+  .detail-key-body {
+    overflow-x: auto;
+    .container-title-body {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .title-apps {
+        font-size: 18px;
+        color: #535353;
+      }
+      .link {
+        margin-top: 5px;
+      }
+      .sort_by {
+        display: flex;
+        gap: 25px;
+        align-items: end;
+        margin-top: 10px;
+        @media (max-width: 992px) {
+          margin-top: 20px;
+        }
+        .ant-space {
+          cursor: pointer;
+          &:hover {
+            color: #ffc225;
+          }
+          .anticon-down {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .line-top {
+      border-top: 1px solid #e6e6e6;
+      margin-top: 15px;
+    }
+    .detail-key {
+      .title-column {
+        background-color: #f0f0f0;
+        padding: 10px 0 10px 20px;
+        .title-styled {
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+      .item-detail {
+        padding: 13px 0 13px 10px;
+        border-top: 1px solid rgb(230, 230, 230);
+        .rank {
+          margin-top: 10px;
+          span {
+            border-radius: 10px;
+            background: #343a3f;
+            padding: 5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+        .content-app {
+          display: flex;
+          .image {
+            img {
+              height: 75px;
+              width: 75px;
+              border-radius: 8px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+          .item-detail-app {
+            margin-left: 15px;
+            .name-app-shopify {
+              .calular-incre {
+                margin-right: 5px;
+                color: white;
+                background: #27a844;
+                border-radius: 6px;
+                padding: 3px;
+                font-size: 12px;
+              }
+              .calular-decre {
+                margin-right: 5px;
+                color: white;
+                background: #dc3544;
+                border-radius: 6px;
+                padding: 3px;
+                font-size: 12px;
+              }
+              .link-name {
+                font-size: 16px;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            .tagline {
+              margin-top: 5px;
+            }
+            .link-app-shopify {
+              margin-top: 5px;
+              &:hover {
+                color: #40a2f8;
+                text-decoration: underline;
+              }
+              .link {
+                color: black;
+                &:hover {
+                  color: #40a2f8;
+                }
+              }
+            }
+          }
+        }
+        .icon-star {
+          color: #d8aa34;
+          .calular-incre {
+            margin-left: 5px;
+            color: white;
+            background: #27a844;
+            border-radius: 6px;
+            padding: 3px;
+            font-size: 12px;
+          }
+          .calular-decre {
+            margin-left: 5px;
+            color: white;
+            background: #dc3544;
+            border-radius: 6px;
+            padding: 3px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .detail-keys {
+    .detail-key-body {
+      .detail-key {
+        width: 1200px;
+      }
+      .sort_by {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+        justify-content: start;
+      }
+      .pagination {
+        width: 1200px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

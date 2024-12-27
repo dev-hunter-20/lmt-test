@@ -1,0 +1,199 @@
+.review_app_dashboard {
+  margin-top: 40px;
+  .ant-list {
+    .ant-list-item {
+      padding: 24px 0 15px 0 !important;
+    }
+  }
+  .dashboard-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .dashboard-tagline {
+    margin: 0;
+    font-weight: normal;
+  }
+  .review-name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  & .review_app_flex_box_title {
+    flex: 0.4;
+    & .review_app_flex_box_title_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      padding-right: 10px;
+      & p {
+        margin-bottom: 0;
+      }
+    }
+    & .review_app_name_overall {
+      margin-bottom: 0;
+      color: #78726d;
+    }
+  }
+  & .review_app_flex_box_content {
+    flex: 0.7;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    & .review_app_flex_box_content_sort {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      & p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  & .review_app_name {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  & .review_app_box {
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 10px;
+    & .review_app_box_time_rate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .review_app_box_time_create {
+        color: #78726d;
+      }
+    }
+    & .review_app_box_content {
+      & .review_app_box_content_reviewName,
+      & .review_app_box_content_location {
+        color: #78726d;
+        margin-bottom: 0;
+        font-weight: 400px;
+        cursor: pointer;
+
+        &:hover {
+          color: blue;
+        }
+      }
+      & .review_app_box_content_reviewName > a,
+      & .review_app_box_content_location > a {
+        text-decoration: underline;
+      }
+      & .link-to-app > a {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #1890ff !important;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      & .link-to-app {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      & .total-reviews {
+        margin-left: 10px;
+        font-size: 13px;
+        color: black;
+        text-decoration: none !important;
+      }
+      & .change-log-review {
+        margin-top: -13px;
+        & .lable-change-log-review {
+          font-size: 13px;
+          color: #000;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      & .content-time_spent_using_app {
+        font-size: 13px;
+        color: #79726c;
+      }
+    }
+  }
+
+  .scroll_list_show_normal {
+    .ant-progress-line {
+      width: 400px;
+    }
+  }
+
+  .title_style {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+    margin: 30px 0 20px;
+  }
+
+  .scroll_list_show {
+    height: 250px;
+    width: fit-content;
+    overflow-y: scroll;
+    & .review_app_flex_box_title_wrapper {
+      & p:first-child {
+        width: 100px;
+      }
+      .ant-progress-line {
+        width: 337px;
+      }
+    }
+  }
+  .locale {
+    font-size: 14px;
+    margin-top: 3px;
+    margin-bottom: 12px;
+    color: #737373;
+    b {
+      color: #000;
+    }
+  }
+  .total {
+    font-size: 14px;
+    margin-top: 3px;
+    color: #737373;
+  }
+  .ant-list-item-meta-title {
+    margin-block-end: 0 !important;
+  }
+  .header-review {
+    display: flex;
+    justify-content: space-between;
+    color: #1d2939;
+  }
+  .content {
+    font-size: 17px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+.loading_components {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-developers-header {
+  padding: 10px 0;
+  background: #0b1d46;
+  font-size: 18px;
+  .ant-breadcrumb-separator,
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #ffc225;
+    }
+  }
+  .ant-breadcrumb-link {
+    color: #ffffff;
+  }
+}

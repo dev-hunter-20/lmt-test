@@ -1,0 +1,126 @@
+.app-info {
+  margin-top: 20px;
+  .table-app {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  th {
+    color: #000000 !important;
+    background: #ffffff !important;
+  }
+
+  .ant-table-cell {
+    line-height: 25px;
+  }
+
+  .ant-table-cell-fix-left {
+    font-weight: 700;
+  }
+
+  .no-shopify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shopify-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-color: #e0f0ff;
+    border-radius: 5px;
+    min-height: 56px;
+    span {
+      padding: 20px 20px 20px 5px;
+    }
+  }
+
+  .lauch-date {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    .check {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      .anticon {
+        color: #02aaa4;
+        margin-right: 5px;
+      }
+      li {
+        padding: 5px 0;
+      }
+    }
+  }
+  .app {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100px;
+    .image {
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-right: 7px;
+      img {
+        width: 90px;
+        height: 90px;
+        border-radius: 4px;
+      }
+    }
+    .title-app {
+      width: 75%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      .app-name {
+        font-size: 16px;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        font-weight: 500;
+      }
+      .rating {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: #d8aa34;
+        margin-bottom: 7px;
+        .star {
+          display: inline-flex;
+          align-items: center;
+          svg {
+            margin-right: 5px;
+            margin-top: -3px;
+          }
+        }
+        .review-count {
+          color: #69b1ff;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+      .view-detail {
+        padding: 7px 20px;
+        background: #ffc225;
+        border-color: #ffc225;
+        color: #0b1d46;
+        border-radius: 3px;
+        font-weight: 500;
+        &:hover {
+          background: #ffc125c7;
+          border-color: #ffc125c7;
+        }
+      }
+    }
+  }
+}

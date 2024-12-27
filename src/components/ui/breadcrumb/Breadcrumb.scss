@@ -1,0 +1,14 @@
+@import '../../../styles/global';
+
+.Breadcrumb {
+  background: $white;
+  padding: 22px 24px;
+
+  .ant-breadcrumb > span:last-child {
+    color: $limeade;
+  }
+
+  &-title {
+    margin: 1.6rem 0 0 0 !important;
+  }
+}

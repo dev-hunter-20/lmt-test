@@ -1,0 +1,15 @@
+@import '../../../styles/global';
+
+.Carousels {
+  .slick-next,
+  .slick-prev {
+    &::before {
+      display: none;
+    }
+    .Icon {
+      svg path {
+        transition: $common-transition;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.collections {
+  .header-collections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .search-input {
+      margin-right: 10px;
+      border-radius: 6px;
+      .ant-input:focus {
+        box-shadow: 0 0 0 2px rgba(238, 197, 17, 0.2) !important;
+      }
+    }
+  }
+  .item-list {
+    .item-collections {
+      margin-top: 15px;
+      border-radius: 5px;
+      box-shadow: -1px 4px 12px 0px #dad9d9;
+      .item-list-collections {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 15px;
+        font-size: 17px;
+        display: flex;
+        justify-content: space-between;
+        a {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

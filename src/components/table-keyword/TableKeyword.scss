@@ -1,0 +1,37 @@
+tr.drop-over-downward td {
+  border-bottom: 2px dashed #1890ff;
+}
+
+tr.drop-over-upward td {
+  border-top: 2px dashed #1890ff;
+}
+
+.difficult-tag {
+  border-radius: 6px;
+  cursor: default;
+}
+.difficulty {
+  cursor: default;
+}
+
+.icon-google {
+  margin-right: 10px;
+  margin-top: 2px;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.show-icon {
+  font-size: 16px;
+  color: #049d0b;
+}
+
+.keyword-text {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  .link {
+    margin-right: 5px;
+  }
+}

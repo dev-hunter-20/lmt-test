@@ -1,0 +1,17 @@
+@import '../../../styles/global';
+
+.Input {
+  .ant-input {
+    &:focus,
+    .ant-input-focused,
+    &:hover {
+      border-color: $limeade;
+    }
+  }
+
+  .ant-input-affix-wrapper:focus,
+  .ant-input-affix-wrapper-focused,
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: $limeade;
+  }
+}

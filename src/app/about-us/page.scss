@@ -1,0 +1,45 @@
+.about-us {
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+  .item-page {
+    .page-header {
+      font-size: 20px;
+      a {
+        color: #000000;
+      }
+    }
+    .container-content {
+      .text {
+        font-style: italic;
+        font-weight: 700;
+      }
+      .custom-solution {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 2.5rem;
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 71.43%;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+  }
+}

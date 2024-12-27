@@ -1,0 +1,27 @@
+@import '../../../../styles/global';
+
+.CheckYourEmail {
+  text-align: center;
+
+  &-title {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  &-description {
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    big {
+      font-size: 20px;
+    }
+
+    span {
+      color: $dodger-blue;
+    }
+  }
+
+  &-submit {
+    margin: 22px 0 32px;
+  }
+}

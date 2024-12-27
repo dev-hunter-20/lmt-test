@@ -1,0 +1,207 @@
+.container-pricing {
+  .text-pricing {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .pricing-plans {
+    .option {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 16px;
+
+      .ant-card {
+        flex: 1 1 30%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .ant-card-head {
+        background-color: #f5f5f5;
+      }
+      .price-title {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .ant-empty {
+        margin: 0 auto;
+      }
+    }
+    .isCheck {
+      display: block;
+      margin: 20px 0;
+      .ant-switch-checked {
+        background-color: #ffc225;
+      }
+      .text-yellow {
+        color: #ffc225;
+      }
+    }
+  }
+
+  .compare {
+    h2 {
+      font-weight: 700;
+      margin: 40px 0 20px 0;
+    }
+
+    .content-compare-pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .content-app {
+        flex: 1 1 calc(33.333% - 20px);
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        .app {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .app-icon-pricing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+              border-radius: 4px;
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 10px;
+              .text-app {
+                font-weight: 700;
+              }
+            }
+          }
+          .app_name {
+            margin-top: 10px;
+            text-align: center;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+        .trial {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          gap: 10px;
+          .free-trial {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .text-pricing-app {
+              font-weight: 700;
+            }
+            .icon-status {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+          .options {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            gap: 10px;
+            height: 100px;
+            min-height: 110px;
+            .text-pricing-app {
+              font-weight: 700;
+            }
+            ul,
+            li {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+            }
+          }
+        }
+        .action {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          .btn-compare-detail {
+            background-color: #ffc225;
+            background: #ffc225;
+            border-color: #ffc225;
+            text-align: center;
+            padding: 11px 0;
+            color: #000000;
+            border-radius: 4px;
+            .anticon-swap {
+              margin-right: 7px;
+            }
+            &:hover {
+              border-color: #f8da8e;
+              background: #f8da8e;
+            }
+          }
+        }
+      }
+
+      .no-data-pricing {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .pricing-option {
+    margin: 30px 0;
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .text {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .content-trial {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 20px;
+
+      .free-trial,
+      .options {
+        flex: 1;
+      }
+
+      .free-trial {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .options {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .pricing-plans {
+    .option {
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 990px) {
+  .content-compare-pricing {
+    flex-direction: column;
+  }
+}

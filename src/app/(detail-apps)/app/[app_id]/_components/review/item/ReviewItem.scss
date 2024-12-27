@@ -1,0 +1,33 @@
+.view-reply {
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: bold;
+  margin: 10px 0;
+  display: table;
+  cursor: pointer;
+  &-content {
+    padding-left: 15px;
+    margin-left: 20px;
+    border-left: 4px solid rgb(177, 177, 177);
+    font-size: 15px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+    height: 0;
+    overflow: hidden;
+  }
+  &-content.show {
+    opacity: 1;
+    height: 100%;
+  }
+  &-author {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(131, 131, 131);
+  }
+}
+.lable-star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

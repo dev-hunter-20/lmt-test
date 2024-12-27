@@ -1,0 +1,29 @@
+.categories {
+  .header-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    &-title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+  .list-categories {
+    .item-list {
+      margin-top: 30px;
+    }
+  }
+}
+.breadcrumb-header {
+  padding: 10px 0;
+  background: #0b1d46;
+  font-size: 18px;
+  .ant-breadcrumb-separator,
+  a {
+    color: white;
+    &:hover {
+      color: #ffc225;
+    }
+  }
+}

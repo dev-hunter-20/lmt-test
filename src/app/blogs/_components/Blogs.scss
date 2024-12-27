@@ -1,0 +1,35 @@
+.container-blogs {
+  margin-top: 20px;
+  background-color: #ffffff;
+  min-height: 650px;
+  .blogdetail {
+    width: 100%;
+    margin-top: 30px;
+    text-align: left;
+  }
+  h1 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .ant-card-bordered {
+    border: none;
+  }
+  .ant-card {
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #ebe9e9;
+    box-shadow: rgba(87, 94, 100, 0.1) 0px 0px 2px 0px, rgba(87, 94, 100, 0.1) 0px 12px 24px -4px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .ant-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+.App {
+  text-align: left;
+}

@@ -1,0 +1,83 @@
+@import "../../../../styles/global";
+
+.LoginApp {
+  text-align: center;
+
+  &-logo {
+    max-width: 20.5rem;
+    margin: 0 auto 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-logo:hover {
+    cursor: pointer;
+  }
+
+  &-remember {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+
+  &-description {
+    font-size: 18px;
+    margin-bottom: 2rem;
+
+    span {
+      color: $dodger-blue;
+    }
+  }
+
+  &-submit {
+    margin: 2.2rem 0 3.2rem;
+    .signIn-button {
+      .ant-btn-primary {
+        background: #ffc225 !important;
+        border: none;
+        color: black;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-third-party {
+    position: relative;
+    margin: 3.2rem 0;
+
+    &::before {
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: $alto;
+      content: "";
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+      font-size: 1.4rem;
+      color: $alto;
+      background: $white;
+      padding: 0.8rem;
+    }
+  }
+
+  &-term {
+    color: rgba($black, 0.6);
+
+    a {
+      text-decoration: underline;
+      color: rgba($black, 0.6);
+    }
+  }
+
+  &-socials {
+    margin-bottom: 2.4rem;
+  }
+}

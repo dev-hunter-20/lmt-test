@@ -1,0 +1,75 @@
+.row-install-uninstall {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  .installs {
+    width: 49%;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 4px;
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .title-chart {
+      text-align: left;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      .title-chart-item {
+        .title {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 500;
+          font-size: 16px;
+        }
+        .total-installs {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .uninstalls {
+    width: 49%;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 4px;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    .title-chart {
+      text-align: left;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      .title-chart-item {
+        .title {
+          display: flex;
+          justify-content: space-between;
+          font-weight: 500;
+          font-size: 16px;
+        }
+        .total-uninstalls {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .growth {
+    margin-left: 10px;
+  }
+  .increase {
+    color: #42996f;
+    div:first-child::before {
+      content: '+';
+    }
+  }
+  .decrease {
+    color: #f43f54;
+  }
+}

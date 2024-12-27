@@ -1,0 +1,106 @@
+@import '../../styles/global';
+
+.AuthForm {
+  &-carousel {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    .Carousels {
+      max-width: 584px;
+      width: 100%;
+      .slick-slider {
+        padding-bottom: 24px;
+      }
+      .slick-next,
+      .slick-prev {
+        top: unset;
+        bottom: 0;
+        transform: none;
+        transform: translateY(100%);
+        z-index: 2;
+      }
+      .slick-prev {
+        left: 25%;
+      }
+      .slick-next {
+        right: 25%;
+      }
+      .slick-dots {
+        li {
+          &:hover,
+          &.slick-active {
+            button {
+              opacity: 1;
+              transform: scale(1.1);
+            }
+          }
+          button {
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            background: $white;
+            opacity: 0.5;
+            border-radius: 50%;
+            transition: $common-transition;
+
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &-bg {
+      @include fullAbsolute;
+      @include centerScaleImage;
+    }
+    &-item {
+      text-align: center;
+      &-image {
+        margin: 0 auto 32px;
+        img {
+          width: 100%;
+        }
+      }
+      &-title {
+        margin-bottom: 16px;
+        font-size: 25px;
+        font-weight: 700;
+        color: $white;
+      }
+
+      &-description {
+        font-size: 16px;
+        font-weight: 500;
+        color: $white;
+      }
+    }
+  }
+  &-wrapper {
+    height: 100%;
+    padding: 32px 24px;
+    background: $white;
+  }
+  &-children {
+    width: 100%;
+    max-width: 360px;
+    .ant-input-affix-wrapper > input.ant-input {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    height: 1080px;
+  }
+}
+@media (max-width: 450px) {
+  .content {
+    height: 932px;
+  }
+}

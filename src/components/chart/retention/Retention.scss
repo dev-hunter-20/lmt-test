@@ -1,0 +1,75 @@
+.row-retention {
+  width: 100%;
+  margin-top: 30px;
+
+  .title-retention {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .content-retention-table {
+    overflow: scroll;
+    max-height: 700px;
+  }
+  .content-retention-table::-webkit-scrollbar {
+    width: 6px;
+  }
+  .content-retention-table::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .content-retention-table::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  .content-retention-table::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: pointer;
+  }
+
+  .content-retention-table-content {
+    display: flex;
+    width: fit-content;
+    height: 50px;
+    div {
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 0.1rem 0;
+    }
+    .value {
+      width: 55px;
+      min-width: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      background-color: white;
+    }
+    .title {
+      position: sticky;
+      left: 0;
+      background-color: white;
+      min-width: 100px;
+      font-weight: bold;
+      span {
+        font-weight: 500;
+        font-size: 12px;
+        color: gray;
+      }
+    }
+  }
+
+  .content-retention-table-content:first-child {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+  }
+}
+
+.ant-table-row.uninstalled,
+.ant-table-row.uninstalled td.ant-table-column-sort {
+  background-color: #fce1e1 !important;
+}
+
+.ant-table-row.uninstalled:hover td {
+  background-color: #ffcece !important;
+}

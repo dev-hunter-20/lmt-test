@@ -1,0 +1,152 @@
+.custom-select-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .search-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 81px;
+    input {
+      border: none;
+      outline: none;
+      flex-grow: 1;
+      height: 100%;
+      background-color: #fff;
+      transition: visibility 0.3s ease, opacity 0.3s ease;
+      opacity: 1;
+      &.hidden {
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .tags-container {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-top: 5px;
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      .custom-tag {
+        margin: 3px;
+        font-size: 14px;
+        width: 225px;
+        max-width: 225px;
+        .tag-name {
+          margin-left: 5px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .more-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        background: #f0f0f0;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      .ant-tag {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        flex-wrap: nowrap;
+        .ant-tag-close-icon {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+        }
+      }
+      .ant-tag-close-icon {
+        color: #ff0000;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+        .no-results {
+          margin: 0 auto;
+        }
+      }
+    }
+    .loading-container {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    .no-results {
+      padding: 10px;
+      text-align: center;
+      color: #999;
+    }
+  }
+  .clear-all-button {
+    position: absolute;
+    top: 6px;
+    color: #ff0000;
+  }
+  .btn-compare_app {
+    padding: 20px 40px;
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.tooltip-item-compare {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  .tooltip-item-name {
+    margin-left: 5px;
+    display: inline-block;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .deselect-item {
+    margin-left: 10px;
+    color: red;
+    font-size: 20px;
+  }
+}

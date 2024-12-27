@@ -1,0 +1,149 @@
+.pricing {
+  text-align: center;
+
+  .title {
+    margin-top: 30px;
+    color: #cc9d24;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px 0;
+
+    thead {
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(250, 213, 126, 1) 0%,
+        rgba(227, 177, 77, 1) 32%,
+        rgba(223, 188, 65, 1) 66%,
+        rgba(230, 199, 54, 1) 90%,
+        rgba(233, 185, 24, 1) 100%
+      );
+      color: #000;
+
+      tr {
+        th {
+          padding: 1rem;
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: uppercase;
+          border: 1px solid rgba(0, 0, 0, 0.05);
+
+          &.feature-header {
+            text-align: left;
+            width: 30%;
+          }
+
+          &.plan-header {
+            text-align: center;
+            width: 70%;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even):not(.price-row):not(.action-row) {
+          background-color: #fafafa;
+        }
+
+        &:hover:not(.action-row) {
+          background-color: #fff8e6;
+        }
+
+        &.price-row {
+          td {
+            padding: 1rem;
+            font-weight: 600;
+            color: #e6a400;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+
+            &.feature-label {
+              text-align: left;
+            }
+
+            &.price {
+              text-align: center;
+              padding: 1rem;
+              color: #e6a400;
+              .product-logo {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto 1rem;
+              }
+
+              .price-amount {
+                display: block;
+                font-size: 24px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+
+        &.feature-row {
+          td {
+            padding: 0.8rem 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            font-size: 14px;
+
+            &.feature-label {
+              text-align: left;
+            }
+
+            &:nth-child(2) {
+              text-align: center;
+            }
+          }
+        }
+
+        &.action-row {
+          td {
+            padding: 2rem 0;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+
+            .get-started-button {
+              padding: 0.75rem 2rem;
+              font-size: 14px;
+              background-color: #cc9d24;
+              border-color: #cc9d24;
+
+              &:hover,
+              &:focus {
+                background-color: darken(#cc9d24, 10%);
+                border-color: darken(#cc9d24, 10%);
+              }
+            }
+          }
+        }
+
+        td {
+          border-left: 1px solid rgba(0, 0, 0, 0.05);
+          &:first-child {
+            border-left: none;
+            text-align: left;
+          }
+        }
+      }
+
+      .check-icon {
+        color: #11b24b;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .feature-label {
+      font-weight: 500;
+    }
+  }
+}

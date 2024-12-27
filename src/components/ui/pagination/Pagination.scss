@@ -1,0 +1,28 @@
+@import '../../../styles/global';
+
+.Pagination {
+  .ant-pagination {
+    display: flex;
+
+    .ant-pagination-total-text {
+      order: 10;
+      margin: 0 0 0 10px;
+    }
+
+    .ant-pagination-item-ellipsis {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-pagination-jump-next,
+    &-item {
+      a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

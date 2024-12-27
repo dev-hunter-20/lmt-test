@@ -1,0 +1,39 @@
+@import '../../../styles/global';
+
+.Button {
+  .ant-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.ant-btn-primary {
+      background: $limeade;
+      border-color: $limeade;
+    }
+
+    &.ant-btn-defautl {
+      &:hover {
+        color: $limeade;
+        border-color: $limeade;
+      }
+    }
+
+    &.ant-btn-link {
+      color: $limeade;
+    }
+  }
+
+  &.reverse {
+    .ant-btn {
+      flex-direction: row-reverse;
+
+      .Button {
+        &-title {
+          margin-left: 0;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

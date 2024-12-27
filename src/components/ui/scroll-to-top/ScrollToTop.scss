@@ -1,0 +1,14 @@
+@import '../../../utils/theme/colors';
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 50%;
+  right: 30px;
+  color: $black;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.scroll-to-top-button:hover {
+  opacity: 1;
+}
